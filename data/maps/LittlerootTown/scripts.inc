@@ -2040,3 +2040,21 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 # 1021 "data/maps/LittlerootTown/scripts.pory"
 	.string "Let's go to my LAB.$"
+
+LittlerootTown_EventScript_Anabel::
+# 1027 "data/maps/LittlerootTown/scripts.pory"
+	lock
+# 1028 "data/maps/LittlerootTown/scripts.pory"
+	faceplayer
+# 1029 "data/maps/LittlerootTown/scripts.pory"
+	msgbox AnabelTestText
+# 1030 "data/maps/LittlerootTown/scripts.pory"
+	release
+	return
+
+
+AnabelTestText::
+# 1034 "data/maps/LittlerootTown/scripts.pory"
+	.string "Hi {PLAYER}{KUN}!\n"
+	.string "My name is Anabel!\l"
+	.string "I hope to see you later!$"

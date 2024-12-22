@@ -1021,3 +1021,16 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "Let's go to my LAB.$"
 
 `
+#Custom Scripts start here
+
+script LittlerootTown_EventScript_Anabel {
+	lock
+	faceplayer
+	msgbox(AnabelTestText)
+    release
+	return
+}
+
+text AnabelTestText {
+    format("Hi {PLAYER}{KUN}!\NMy name is Anabel!\NI hope to see you later!")
+}
